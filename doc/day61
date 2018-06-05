@@ -1,0 +1,16 @@
+1.回顾Rest接口写法
+    1)请求 -> 响应
+      资源    结果
+
+      资源 uri    类似于路由
+      动作 post   新增资源
+           put      修改某一资源(某一属性)
+           patch    修改多个资源(多个属性)
+           delete   删除资源
+           get      查询资源
+
+      结果 json数据
+           jsonify({})
+
+           如果数据是list[xxxModel]包含object类对象,
+           则自定义object转json的编码器(JSONEncoder)
